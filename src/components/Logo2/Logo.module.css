@@ -1,0 +1,23 @@
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoImg {
+  height: auto;
+  object-fit: contain;
+}
+
+/* Sizes */
+.small .logoImg {
+  height: 30px;
+}
+
+.medium .logoImg {
+  height: 40px;
+}
+
+.large .logoImg {
+  height: 50px;
+}

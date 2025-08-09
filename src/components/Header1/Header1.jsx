@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
-import Logo from '../Logo/Logo';
+import Logo from '../Logo2/Logo';
 import styles from './Header1.module.css';
 
 const Header1 = () => {
