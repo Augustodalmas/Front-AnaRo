@@ -48,7 +48,7 @@ const Footer1 = () => {
               </div> */}
               <div className={styles.contactItem}>
                 <FiPhone />
-                <span>+55 (54) 98409-6156</span>
+                <span>+55 (54) 98417-4451</span>
               </div>
               <div className={styles.contactItem}>
                 <FiMapPin />
