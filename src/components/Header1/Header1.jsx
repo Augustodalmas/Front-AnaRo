@@ -7,7 +7,7 @@ import styles from './Header1.module.css';
 const Header1 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ['Sobre', 'Portfólio', 'Contato'];
+  const menuItems = ['Sobre', 'Serviços', 'Contato'];
 
   return (
     <motion.header
@@ -26,7 +26,19 @@ const Header1 = () => {
               key={item}
               href={`#${item.toLowerCase().replace('ó', 'o')}`}
               className={styles.navLink}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsMenuOpen(false);
+                const target = document.getElementById(item.toLowerCase().replace('ó', 'o'));
+                if (target) {
+                  const headerHeight = 80;
+                  const targetPosition = target.offsetTop - headerHeight;
+                  window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                  });
+                }
+              }}
               whileHover={{ y: -2 }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

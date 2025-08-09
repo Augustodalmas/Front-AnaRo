@@ -65,7 +65,7 @@ const Gallery1 = () => {
 
   return (
     <motion.section
-      id="portfolio"
+      id="serviços"
       className={styles.gallery}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
